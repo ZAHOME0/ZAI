@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>常見問題 | ZAIHOME 純手工穿戴甲</title>
+<style>html,body{margin:0;background:#FDFCFB}</style>
+</head>
+<body>
+<!-- ZAIHOME FAQ 一頁式:整段貼入官網自訂 HTML 區塊即可 -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Noto+Sans+TC:wght@500;600;700;900&display=swap" rel="stylesheet">
+<style>
+#zh-faq{--bg:transparent;--ink:#2b2b2b;--mute:#6f6a60;--line:#dcd9d3;--red:#85464A;max-width:920px;margin:0 auto;padding:56px 20px 64px;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.85;font-weight:600;box-sizing:border-box}
+#zh-faq *{box-sizing:border-box}
+#zh-faq .hd{text-align:center;padding:36px 16px;border:1px solid var(--ink);outline:1px solid var(--ink);outline-offset:-7px;margin-bottom:32px}
+#zh-faq .en{font-weight:700;font-family:"Cormorant Garamond","GFS Baskerville",serif;letter-spacing:.32em;font-size:13px;color:var(--red)}
+#zh-faq h2{margin:8px 0 6px;font-size:28px;font-weight:900;letter-spacing:.12em}
+#zh-faq .sub{margin:0;font-size:14px;color:var(--mute)}
+#zh-faq .tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:28px}
+#zh-faq .tab{font:inherit;font-size:14px;font-weight:700;letter-spacing:.06em;padding:9px 18px;background:transparent;color:var(--ink);border:1px solid var(--ink);cursor:pointer;transition:.2s}
+#zh-faq .tab:hover{background:#efeeea}
+#zh-faq .tab[aria-pressed="true"]{background:var(--ink);color:#fff}
+#zh-faq .cat{margin-bottom:34px}
+#zh-faq .cat[hidden]{display:none}
+#zh-faq .cat h3{display:flex;align-items:baseline;gap:12px;margin:0 0 4px;font-size:18px;font-weight:900;letter-spacing:.1em;padding-bottom:10px;border-bottom:1px solid var(--ink)}
+#zh-faq .cat h3 span{font-weight:700;font-family:"Cormorant Garamond",serif;color:var(--red);font-size:20px}
+#zh-faq .q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;font:inherit;font-size:15.5px;font-weight:700;padding:16px 2px;background:none;border:0;border-bottom:1px solid var(--line);color:var(--ink);cursor:pointer}
+#zh-faq .q:hover{color:var(--red)}
+#zh-faq .q i{flex:none;width:14px;height:14px;position:relative}
+#zh-faq .q i:before,#zh-faq .q i:after{content:"";position:absolute;left:0;top:6px;width:14px;height:1.5px;background:currentColor;transition:.25s}
+#zh-faq .q i:after{transform:rotate(90deg)}
+#zh-faq .q[aria-expanded="true"] i:after{transform:rotate(0)}
+#zh-faq .a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+#zh-faq .a div{padding:14px 2px 18px;font-size:14.5px;font-weight:600;color:#2b2b2b;border-bottom:1px solid var(--line)}
+#zh-faq .a a{color:var(--red);word-break:break-all}
+#zh-faq .cta{text-align:center;border:1px solid var(--ink);outline:1px solid var(--ink);outline-offset:-7px;padding:34px 16px}
+#zh-faq .cta p{margin:0 0 16px;font-size:14.5px}
+#zh-faq .btn{display:inline-block;padding:13px 34px;background:var(--ink);color:#fff;text-decoration:none;letter-spacing:.14em;font-size:14.5px;font-weight:700;border:1px solid var(--ink);transition:.2s}
+#zh-faq .btn:hover{background:var(--red);border-color:var(--red)}
+@media(max-width:640px){
+#zh-faq{padding:28px 14px 44px}
+#zh-faq h2{font-size:23px}
+#zh-faq .tabs{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;margin:0 -14px 22px;padding:0 14px 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+#zh-faq .tabs::-webkit-scrollbar{display:none}
+#zh-faq .tab{flex:none;white-space:nowrap;padding:8px 14px;font-size:13.5px}
+#zh-faq .q{font-size:15px;padding:15px 0}
+#zh-faq .btn{display:block;padding:14px 10px}
+}
+</style>
+
+<div id="zh-faq">
+  <div class="hd">
+    <div class="en">FAQ</div>
+    <h2>常見問題</h2>
+  </div>
+  <div class="tabs" id="zh-tabs"></div>
+  <div id="zh-list"></div>
+  <div class="cta">
+    <p>找不到答案?歡迎提供商品名稱、尺寸、訂單編號或參考圖片,客服會更快協助你。</p>
+    <a class="btn" href="https://line.me/R/ti/p/@754dmylx" target="_blank" rel="noopener">聯繫客服</a>
+  </div>
+</div>
+
+<script>
+(function(){
+var D=[
+{n:"01",t:"購買與出貨",i:[
+["現貨、訂製和改甲型的出貨時間一樣嗎?","現貨商品原則上於 1–2 個工作日內寄出。\n訂製款或改甲型商品需要另外安排製作時間,可與客服確認時間。"],
+["寄出後多久會收到?","寄出後約 2–3 天配送,實際到貨時間仍依物流安排為準。\n遇到假日、節慶或物流繁忙時,配送時間可能延長。"],
+["週末或國定假日會出貨、製作嗎?","週六、週日及國定假日公休,原則上不製作、不出貨。\n工作日的計算不包含週末及國定假日。"],
+["有急用,可以保證某一天收到嗎?","物流配送時間無法保證。\n若有急用,請先聯絡客服確認製作與寄件安排。"],
+["下單後可以修改或取消嗎?","請盡快透過官方 LINE 提出訂單編號,客服會依訂單製作及出貨進度協助確認。\n商品寄出後,無法再修改收件資料或取消配送。"]]},
+{n:"02",t:"尺寸、甲型與商品",i:[
+["要怎麼選穿戴甲尺寸?","請先依官網尺寸表選擇最合適的尺寸。\n左右手的指甲寬度可能不同,請分別測量;若不確定,建議下單前先聯絡客服確認。"],
+["商品照片和收到的實品會完全一樣嗎?","商品為手工製作,且拍攝光線、螢幕顯示可能造成色彩或細節觀感差異。\n手工商品可能有些微製作差異,請以商品說明及實際收到的商品為準。"],
+["每副穿戴甲有幾片?附哪些工具?","手部款每副 10 片,足部款每副 12 片。工具組內容依商品頁說明為準;同筆訂單購買多副時,工具組可能合併包裝,請下單前確認商品頁資訊。"],
+["附贈的果凍膠可以維持多久?","附贈果凍膠的配戴時間會受個人指甲狀況、清潔方式及日常活動影響,無法保證固定天數。牛皮紙果凍膠的配戴時間約為 3–4 天,實際狀況因人而異。\n若需要不同維持時間,可以參閱工具組分類裡的果凍膠唷。"],
+["本店的款式可以更換甲型嗎?","需先詢問客服確認款式是否能更換。\n一般改甲型會另外加價,常規加價約 NT$30,部分款式約 NT$50,實際金額會依款式與製作狀況報價。\n改甲型需要重新安排製作時間。"]]},
+{n:"03",t:"訂製服務",i:[
+["怎麼訂製呢?","先傳送款式參考圖及需求給 LINE 客服,確認價格與時間安排後,再依客服說明完成下單。\n(含有角色、版權的圖片,為避免侵權問題,無法承接製作。)"],
+["訂製流程是什麼?","提供需求與參考圖片 → 客服確認可製作方式及報價 → 完成下單 → 安排製作 → 依約定方式提供製作照片確認 → 寄出商品"],
+["訂製照片收到後,要多久之內回覆?","收到照片後,請盡量於當天 15:00 前確認。\n若照片於夜間傳送,回覆時間順延至隔日。\n實際確認方式請依客服事先說明為準。"],
+["訂製商品可以要求完全和參考圖一模一樣嗎?","穿戴甲為手工製作,顏色、線條及細節可能有些微差異。\n下單前請先確認客服提供的製作方式、報價及可呈現效果。有疑問時,請在確認下單前提出。"]]},
+{n:"04",t:"退換貨與售後",i:[
+["收到商品後不喜歡,可以退貨嗎?","請先聯絡客服確認商品狀況與適用方式。穿戴甲涉及個人衛生,已拆封商品的解除契約權利,須依相關規定及下單前已告知的商品資訊判斷;商品瑕疵或寄錯商品,請另行聯絡客服協助處理。"],
+["同筆買了多副,工具組合併包裝,可以只退其中一副嗎?","同筆訂單購買多副時,工具組可能合併包裝。請在拆封或使用前確認商品;若其中一項拆封,則因無法判斷是否使用過而無法退換貨。"],
+["收到商品有瑕疵或寄錯怎麼辦?","收到包裹後請先確認商品。若有瑕疵或寄錯,請保留商品、完整內包裝,並盡量於收到後 24 小時內透過 LINE 客服提供訂單資訊以及照片或開箱影片,方便核對與處理。\n(這項聯絡時限是為了協助快速查核,不取代依法享有的權利。)"],
+["商品有些微色差或尺寸差異,算瑕疵嗎?","拍攝光線、螢幕顯示及手工製作可能造成些微差異。\n若收到商品有明顯損壞、寄錯或與訂單不符,請提供照片或開箱影片聯絡客服確認。"]]},
+{n:"05",t:"會員與客服",i:[
+["官網會員購物金可以在蝦皮使用嗎?","官網會員購物金及會員回饋限於 ZAIHOME 官網使用,無法折抵蝦皮訂單。\n實際可使用方式與效期,請以官網會員頁及結帳畫面顯示為準。"],
+["註冊會員有什麼優惠?","官網會員註冊禮與會員回饋,請查看「會員權益」頁面。\n購物金使用門檻、折抵方式及效期,以官網會員頁及結帳畫面顯示為準。"],
+["我還有其他問題,該怎麼聯絡?","請透過官網上的「聯繫客服」按鈕與我們聯繫。\n詢問時可一併提供商品名稱、尺寸、訂單編號或參考圖片,客服會更快協助確認。"]]},
+{n:"06",t:"配戴與尺寸",i:[
+["穿戴甲要怎麼配戴?","可以查看影片教學,按照教學配戴:\n<a href=\"https://www.instagram.com/reel/DavyjvdTzHX/\" target=\"_blank\" rel=\"noopener\">配戴教學影片(Instagram)</a>",1],
+["尺寸剛好介於兩個尺寸之間,該怎麼選?","請先依尺寸教學測量每一指,再選擇最接近的尺寸。\n若介於兩個尺寸之間不確定怎麼選時,請在下單前提供測量結果詢問客服。"],
+["可以只補買一片遺失或損壞的甲片嗎?","可以的喔,單片補寄請先聯絡客服確認款式以及指數唷。"]]},
+{n:"07",t:"訂單與物流",i:[
+["出貨後要去哪裡查物流進度?","請至下單平台的訂單頁查看物流資訊,並留意信箱通知。\n官網訂單若因信箱錯誤或未留存註冊而沒有收到通知,請聯繫客服,提供當時下單的收件人名字,以便為您查看目前訂單進度。"],
+["超商包裹逾期未取,或包裹退回怎麼辦?","請務必於平台通知的期限內完成包裹取件。若包裹因逾期未取而退回,請提前聯絡客服告知。\n若未提前告知且未取貨,本公司將不再為您提供服務。"],
+["下單後發現尺寸、甲型或收件資料填錯,怎麼辦?","請盡快聯絡客服並提供訂單編號。商品尚未製作或寄出前,客服會依訂單進度協助確認是否能修改;若已進入製作或寄送流程,可能無法更改。"]]}
+];
+var tabs=document.getElementById("zh-tabs"),list=document.getElementById("zh-list"),secs=[],btns=[];
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+function mkTab(label,idx){var b=document.createElement("button");b.type="button";b.className="tab";b.textContent=label;b.setAttribute("aria-pressed",idx===-1?"true":"false");b.onclick=function(){show(idx)};tabs.appendChild(b);btns.push(b)}
+function show(idx){btns.forEach(function(b,k){b.setAttribute("aria-pressed",k-1===idx?"true":"false")});secs.forEach(function(s,k){s.hidden=!(idx===-1||idx===k)})}
+mkTab("全部",-1);
+D.forEach(function(c,ci){
+mkTab(c.t,ci);
+var s=document.createElement("section");s.className="cat";
+s.innerHTML='<h3><span>'+c.n+'</span>'+c.t+'</h3>';
+c.i.forEach(function(it,k){
+var id="zhq-"+ci+"-"+k;
+var body=it[2]?it[1].replace(/\n/g,"<br>"):esc(it[1]).replace(/\n/g,"<br>");
+var q=document.createElement("button");q.type="button";q.className="q";q.id=id+"-b";q.setAttribute("aria-expanded","false");q.setAttribute("aria-controls",id);
+q.innerHTML='<span>'+esc(it[0])+'</span><i></i>';
+var a=document.createElement("div");a.className="a";a.id=id;a.setAttribute("role","region");a.innerHTML='<div>'+body+'</div>';
+q.onclick=function(){var o=q.getAttribute("aria-expanded")==="true";q.setAttribute("aria-expanded",o?"false":"true");a.style.maxHeight=o?"0":a.scrollHeight+"px"};
+s.appendChild(q);s.appendChild(a)});
+list.appendChild(s);secs.push(s)});
+window.addEventListener("resize",function(){document.querySelectorAll("#zh-faq .q[aria-expanded=true]").forEach(function(q){var a=document.getElementById(q.getAttribute("aria-controls"));a.style.maxHeight=a.scrollHeight+"px"})});
+})();
+</script>
+
+</body>
+</html>
